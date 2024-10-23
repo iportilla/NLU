@@ -36,7 +36,7 @@ response = natural_language_understanding.analyze(
 
 print(json.dumps(response, indent=2))
 
-#Enttities
+#Entities
 response = natural_language_understanding.analyze(
     url='www.cnn.com',
     features=Features(entities=EntitiesOptions(sentiment=True,limit=1))).get_result()
